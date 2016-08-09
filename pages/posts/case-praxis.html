@@ -1,0 +1,31 @@
+title: Praxis Taller
+thumbnail: /static/images/image-thumbnail.jpg
+tags: DESIGN AND REALISATION, E-COMMERCE, FRONTEND DEVELOPMENT
+date: 21-04-2016
+template: dark 
+
+{% extends "post.html" %}
+{% block body %}
+{% filter markdown %}
+
+Följ med på denna uppgradering. En av Santiagos erkända cykelhandlare med en mycket kräsen och nischad publik fick hjälp med att upprätta sin första helt webbaserade ordersystem för en punktinsats.
+
+Importeringen från den Londonbaserade Brick Lane Bikes blev en månadslång kampanj med sparsam och riktad kommunikation i utvalda kanaler i syfte att säkra en specifik mängd förhandsbeställningar.
+
+I samband med kampanjen och den kommunikativa strategin utvecklade jag en sajt som landingssida med snabb checkout och flera konverteringsmål.
+
+{% endfilter %}
+{% endblock body %}
+
+{% block contents %}
+	<img class="featured 2x " src="{% static '/images/Praxis-Intro.png' %}"/>
+	<img class="featured 2x " src="{% static '/images/Praxis-Chrome.png' %}"/>
+{% endblock contents %}
+
+{% block collateral %}
+	<img class="featured 2x right" src="{% static '/images/Praxis-Devices.png' %}"/>
+{% endblock collateral %}
+
+{% block full %}
+	<img class="featured 2x" src="{% static '/images/Praxis-Flyers.png' %}"/>
+{% endblock full %}
