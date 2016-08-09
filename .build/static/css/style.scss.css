@@ -5,6 +5,25 @@ html {
 *, *::after, *::before {
   box-sizing: inherit; }
 
+body:before {
+  background-image: -webkit-linear-gradient(left, transparent 0, #d5d5d5 0, #d5d5d5 7.02981%, transparent 7.02981%, transparent 8.45184%, #eee 8.45184%, #eee 15.48164%, transparent 15.48164%, transparent 16.90367%, #d5d5d5 16.90367%, #d5d5d5 23.93348%, transparent 23.93348%, transparent 25.35551%, #eee 25.35551%, #eee 32.38531%, transparent 32.38531%, transparent 33.80734%, #d5d5d5 33.80734%, #d5d5d5 40.83715%, transparent 40.83715%, transparent 42.25918%, #eee 42.25918%, #eee 49.28899%, transparent 49.28899%, transparent 50.71101%, #d5d5d5 50.71101%, #d5d5d5 57.74082%, transparent 57.74082%, transparent 59.16285%, #eee 59.16285%, #eee 66.19266%, transparent 66.19266%, transparent 67.61469%, #d5d5d5 67.61469%, #d5d5d5 74.64449%, transparent 74.64449%, transparent 76.06652%, #eee 76.06652%, #eee 83.09633%, transparent 83.09633%, transparent 84.51836%, #d5d5d5 84.51836%, #d5d5d5 91.54816%, transparent 91.54816%, transparent 92.97019%, #eee 92.97019%, #eee 100%, transparent 100%);
+  background-image: -moz-linear-gradient(left, transparent 0, #d5d5d5 0, #d5d5d5 7.02981%, transparent 7.02981%, transparent 8.45184%, #eee 8.45184%, #eee 15.48164%, transparent 15.48164%, transparent 16.90367%, #d5d5d5 16.90367%, #d5d5d5 23.93348%, transparent 23.93348%, transparent 25.35551%, #eee 25.35551%, #eee 32.38531%, transparent 32.38531%, transparent 33.80734%, #d5d5d5 33.80734%, #d5d5d5 40.83715%, transparent 40.83715%, transparent 42.25918%, #eee 42.25918%, #eee 49.28899%, transparent 49.28899%, transparent 50.71101%, #d5d5d5 50.71101%, #d5d5d5 57.74082%, transparent 57.74082%, transparent 59.16285%, #eee 59.16285%, #eee 66.19266%, transparent 66.19266%, transparent 67.61469%, #d5d5d5 67.61469%, #d5d5d5 74.64449%, transparent 74.64449%, transparent 76.06652%, #eee 76.06652%, #eee 83.09633%, transparent 83.09633%, transparent 84.51836%, #d5d5d5 84.51836%, #d5d5d5 91.54816%, transparent 91.54816%, transparent 92.97019%, #eee 92.97019%, #eee 100%, transparent 100%);
+  background-image: -ms-linear-gradient(left, transparent 0, #d5d5d5 0, #d5d5d5 7.02981%, transparent 7.02981%, transparent 8.45184%, #eee 8.45184%, #eee 15.48164%, transparent 15.48164%, transparent 16.90367%, #d5d5d5 16.90367%, #d5d5d5 23.93348%, transparent 23.93348%, transparent 25.35551%, #eee 25.35551%, #eee 32.38531%, transparent 32.38531%, transparent 33.80734%, #d5d5d5 33.80734%, #d5d5d5 40.83715%, transparent 40.83715%, transparent 42.25918%, #eee 42.25918%, #eee 49.28899%, transparent 49.28899%, transparent 50.71101%, #d5d5d5 50.71101%, #d5d5d5 57.74082%, transparent 57.74082%, transparent 59.16285%, #eee 59.16285%, #eee 66.19266%, transparent 66.19266%, transparent 67.61469%, #d5d5d5 67.61469%, #d5d5d5 74.64449%, transparent 74.64449%, transparent 76.06652%, #eee 76.06652%, #eee 83.09633%, transparent 83.09633%, transparent 84.51836%, #d5d5d5 84.51836%, #d5d5d5 91.54816%, transparent 91.54816%, transparent 92.97019%, #eee 92.97019%, #eee 100%, transparent 100%);
+  background-image: -o-linear-gradient(left, transparent 0, #d5d5d5 0, #d5d5d5 7.02981%, transparent 7.02981%, transparent 8.45184%, #eee 8.45184%, #eee 15.48164%, transparent 15.48164%, transparent 16.90367%, #d5d5d5 16.90367%, #d5d5d5 23.93348%, transparent 23.93348%, transparent 25.35551%, #eee 25.35551%, #eee 32.38531%, transparent 32.38531%, transparent 33.80734%, #d5d5d5 33.80734%, #d5d5d5 40.83715%, transparent 40.83715%, transparent 42.25918%, #eee 42.25918%, #eee 49.28899%, transparent 49.28899%, transparent 50.71101%, #d5d5d5 50.71101%, #d5d5d5 57.74082%, transparent 57.74082%, transparent 59.16285%, #eee 59.16285%, #eee 66.19266%, transparent 66.19266%, transparent 67.61469%, #d5d5d5 67.61469%, #d5d5d5 74.64449%, transparent 74.64449%, transparent 76.06652%, #eee 76.06652%, #eee 83.09633%, transparent 83.09633%, transparent 84.51836%, #d5d5d5 84.51836%, #d5d5d5 91.54816%, transparent 91.54816%, transparent 92.97019%, #eee 92.97019%, #eee 100%, transparent 100%);
+  background-image: linear-gradient(to left, transparent 0, #d5d5d5 0, #d5d5d5 7.02981%, transparent 7.02981%, transparent 8.45184%, #eee 8.45184%, #eee 15.48164%, transparent 15.48164%, transparent 16.90367%, #d5d5d5 16.90367%, #d5d5d5 23.93348%, transparent 23.93348%, transparent 25.35551%, #eee 25.35551%, #eee 32.38531%, transparent 32.38531%, transparent 33.80734%, #d5d5d5 33.80734%, #d5d5d5 40.83715%, transparent 40.83715%, transparent 42.25918%, #eee 42.25918%, #eee 49.28899%, transparent 49.28899%, transparent 50.71101%, #d5d5d5 50.71101%, #d5d5d5 57.74082%, transparent 57.74082%, transparent 59.16285%, #eee 59.16285%, #eee 66.19266%, transparent 66.19266%, transparent 67.61469%, #d5d5d5 67.61469%, #d5d5d5 74.64449%, transparent 74.64449%, transparent 76.06652%, #eee 76.06652%, #eee 83.09633%, transparent 83.09633%, transparent 84.51836%, #d5d5d5 84.51836%, #d5d5d5 91.54816%, transparent 91.54816%, transparent 92.97019%, #eee 92.97019%, #eee 100%, transparent 100%);
+  content: "";
+  display: inline-block;
+  height: 100%;
+  left: 0;
+  margin: 0 auto;
+  max-width: 1085px;
+  opacity: 0.1;
+  pointer-events: none;
+  position: fixed;
+  right: 0;
+  width: 100%;
+  z-index: -1; }
+
 /* Link to Documentation */
 #docs {
   position: fixed;
@@ -96,7 +115,7 @@ body {
   clear: both; }
 
 .dark {
-  background-color: #242426; }
+  background-color: #2F2F2F; }
 
 #header {
   padding: 1em 0; }
@@ -249,6 +268,12 @@ h2 {
   color: #fff;
   margin-bottom: 6px; }
 
+h3 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #eee;
+  margin-bottom: 2px; }
+
 h4 {
   font-size: 13px;
   font-weight: bold;
@@ -311,7 +336,7 @@ p.small {
     margin-right: 0; }
 
 .post-collateral {
-  max-width: 100%;
+  max-width: 1085px;
   margin-left: auto;
   margin-right: auto; }
   .post-collateral::after {
@@ -322,9 +347,17 @@ p.small {
     float: left;
     display: block;
     margin-right: 1.42203%;
-    width: 57.74082%;
-    margin-left: 42.25918%; }
+    width: 66.19266%; }
     .post-collateral img:last-child {
+      margin-right: 0; }
+  .post-collateral h3, .post-collateral p {
+    margin-left: 8.45184%;
+    display: inline-block;
+    float: left;
+    display: block;
+    margin-right: 1.42203%;
+    width: 49.28899%; }
+    .post-collateral h3:last-child, .post-collateral p:last-child {
       margin-right: 0; }
 
 .post-full {
@@ -339,8 +372,9 @@ p.small {
     flex: auto;
     align-content: center;
     margin: 0 auto; }
-  .post-full.praxis {
-    background-image: url(../images/Praxis-Bg-Collateral.jpg); }
+  @media screen and (min-width: 769px) {
+    .post-full .praxistaller {
+      background-image: url(../images/Praxis-Bg-Collateral.jpg); } }
 
 .post-meta {
   font-size: 11.31542;

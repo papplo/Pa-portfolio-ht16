@@ -72,7 +72,7 @@ body {
 }
 
 .dark {
-	background-color: #242426;
+	background-color: #2F2F2F;
 }
 
 #header {
@@ -224,6 +224,13 @@ h2 {
 	margin-bottom: 6px;
 }
 
+h3 {
+	font-size: 22px;
+	font-weight: bold;
+	color: #eee;
+	margin-bottom: 2px;
+}
+
 h4 {
 	font-size: 13px;
 	font-weight: bold;
@@ -273,11 +280,16 @@ p.small {
 		}
 	}
 	.post-collateral{
-		@include outer-container(100%);
+		@include outer-container();
 		
 		img {
-			@include span-columns(7);
-			@include shift(5);
+			@include span-columns(8);
+		}
+		
+		h3, p {
+			@include shift(1);
+			display: inline-block;
+			@include span-columns(6);
 		}
 	}
 
@@ -290,8 +302,10 @@ p.small {
 			margin: 0 auto;
 		}
 		
-		&.praxis {
-			background-image: url(../images/Praxis-Bg-Collateral.jpg);
+		& .praxistaller {
+			@include media(769px) {
+				background-image: url(../images/Praxis-Bg-Collateral.jpg);
+			}
 		}
 	}
 

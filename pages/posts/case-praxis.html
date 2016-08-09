@@ -23,6 +23,16 @@ I samband med kampanjen och den kommunikativa strategin utvecklade jag en sajt s
 {% endblock contents %}
 
 {% block collateral %}
+{% filter markdown %}
+###Responsivt
+Sajten besöks i flera steg vid flera olika tillfällen, varför en viktigt strategi är att den fungerar och spelar bra på både mobil och desktop. 
+
+###Simpelt och snabbt
+Själva katalogen är begränsad och skiktad i fler olika prislägen och erbjuder ett högklassigt urval av komponenter och tillbehör för suktande besökare. 
+Sajten har en snabb översikt, väldigt lite presentationstexter och en överväldigande fokus på starkt bildmaterial.
+
+{% endfilter %}
+
 	<img class="featured 2x right" src="{% static '/images/Praxis-Devices.png' %}"/>
 {% endblock collateral %}
 
