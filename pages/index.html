@@ -1,29 +1,52 @@
 {% extends "base.html" %}
 {% block content %}
 
-	<section id="wrapper">
-		<header id="header">
-			<h1>{% block title %}{{ block.super }}{% endblock title %}</h1>
+	<section class="wrapper">
+		
+		<header id="header" class="wrapper">
+			<h4> Portfolio </h4>
+			{% block nav %}
+				{{ block.super }}
+			{% endblock nav %}
 		</header>
-
-		<a id="docs" href="http://cactusformac.com/redirect/#documentation">Documentation</a>
+		
+		<section id="intro" class="wrapper">
+			<h1>Pablo Anttila</h1>
+			<p>Kodare, producent och visuell kommunikatör 
+med inrikting på varumärkesstrategi och digital design</p>
+		</section>
 
 		<section id="thumbnails" class="clearfix">
+			<ul class="thumbnails-list">
 			{% for post in posts %}
-				<a href='/{{ post.path }}'>
-					<img class="2x" width="300" height="300" src="{{ post.thumbnail }}"/>
-					<span>{{ post.title }}</span>
-				</a>
+				<li>
+					<a href='/{{ post.path }}'  class="{{ post.title|slugify }}">
+						<!-- <img class="" width="" height="" src="{{ post.thumbnail }}"/> -->
+						<span>{{ post.title }}</span>
+					</a>
+				</li>
 			{% endfor %}
+			</ul>
+			<aside>
+				DESIGN 
+				REALISATION
+				E-COMMERCE
+				FRONTEND 
+				DEVELOPMENT
+				DESIGN 
+				REALISATION
+				E-COMMERCE
+				FRONTEND 
+				DEVELOPMENT
+			</aside>
 		</section>
 
 		{% block footer %}
-			<footer id="footer">
+		<footer id="footer" class="wrapper">
 				<p class="small">Designed in Sketch, produced and prototyped in Cactus, Brackets and Chrome.</p>
 			</footer>
 		{% endblock footer %}
 	</section>
 
-	<a href="http://cactusformac.com/?utm_source=templates&utm_medium=badge&utm_campaign=portfolio-template"><img id="badge" class="2x" src="{% static '/images/badge.png' %}"/></a>
 	
 {% endblock content %}

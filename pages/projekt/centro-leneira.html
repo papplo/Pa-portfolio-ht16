@@ -1,0 +1,33 @@
+title: Centro Leneria
+thumbnail: /static/images/image-thumbnail.jpg
+tags: Frontend, Wordpress, CSS
+date: 1-4-2016
+
+template: dark 
+
+{% extends "post.html" %}
+{% block body %}
+{% filter markdown %}
+
+
+{% endfilter %}
+{% endblock body %}
+
+{% block contents %}
+	<img class="featured 2x " src="{% static '/images/Leneria-Intro.jpg' %}"/>
+{% endblock contents %}
+
+{% block collateral %}
+{% filter markdown %}
+###Responsivt
+Sajten besöks i flera steg vid flera olika tillfällen, varför en viktigt strategi är att den fungerar och spelar bra på både mobil och desktop. 
+
+###Simpelt och snabbt
+Själva katalogen är begränsad och skiktad i fler olika prislägen och erbjuder ett högklassigt urval av komponenter och tillbehör för suktande besökare. 
+Sajten har en snabb översikt, väldigt lite presentationstexter och en överväldigande fokus på starkt bildmaterial.
+
+{% endfilter %}
+{% endblock collateral %}
+
+{% block full %}
+{% endblock full %}
