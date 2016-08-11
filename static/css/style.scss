@@ -30,8 +30,8 @@ table{border-collapse:collapse;border-spacing:0}
 .post img {
 	margin: 60px auto;
 	position: relative;
-	max-width: 902px;
-	width: 100%;
+	/*max-width: 902px;
+	width: 100%;*/
 }
 
 html,body {
@@ -58,6 +58,15 @@ body {
 	clear: both;
 }
 
+.full-width {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
 .dark {
 	background-color: #2F2F2F;
 }
@@ -76,6 +85,16 @@ img {
 
 	aside {
 		@include span-columns(2);
+		line-height: 235%;
+		position: absolute;
+		font-size: augmented-fourth(16px, -1)+1;
+
+		@include media($mobile){
+			display: inline-block;
+			text-align: center;
+			position: relative;
+			width: 100%;
+		}
 	}	
 	
 	.thumbnails-list {
@@ -95,13 +114,32 @@ img {
 		@include media($mobile) {
 		  @include span-columns(4);
 		}	
+			
+			&:nth-child(5){
+				@include media(min-width 540px) {
+					
+					@include span-columns(13);
+					@include shift(-2);
 
+					a{	padding-bottom: 31.25%; }
+					
+				}
+			}
+			&:nth-child(6){
+				@include media(min-width 540px) {
+    				margin-right: 1.7113%;	}
+			}
+			&:nth-child(7){
+				@include media(min-width 540px) {
+					clear: none; }
+			}
 						
 		a {
 			width: 100%;
 			padding-bottom: 56.25%; /* 16:9 */
 			position: relative;
 			display: block;
+			overflow: hidden;
 			
 			span {
 					position: absolute;
@@ -113,13 +151,16 @@ img {
 					font-weight: 700;
 					margin: 20px;
 					text-align: left;
+					z-index: 2;
 			}
 			
 			img {
-				display: block;
-				background: #fff;
+				position: absolute;
+				top: 0; bottom: 0; left: 0; right: 0;
+
 				width: 100%;
 				height: auto;
+				z-index: 1;
 			}
 			
 			
@@ -147,9 +188,9 @@ $main-colour: #fff;
 	p{ @include span-columns(7); text-align: right;}
 	
 	@include media(max-width 540px) {
-		margin: 20px 0;
-		h1{ @include span-columns(12)}
-		p{ @include span-columns(12); text-align: left;}
+		margin: 20px 10px 40px;
+		h1{ @include span-columns(12); text-align: center; }
+		p{ @include span-columns(12); text-align: center;}
 
 	}
 
@@ -187,7 +228,7 @@ ul 	{ margin: 0; padding: 0; }  li	{ list-style-type: circle; list-style-positio
 h1 {
 	display: inline-block;
 	line-height: 100%;
-	color: #eee;
+	color: #333;
 	font-weight: bold;
 	font-size: augmented-fourth(16px, 3);
 	margin: 0;
@@ -271,7 +312,7 @@ p.small {
 	}
 
 	.post-full{
-		@include outer-container(100%);
+		@include outer-container();
 		
 		img {
 			flex: auto;
@@ -385,18 +426,18 @@ p.small {
 
 
 @media screen and (max-width: 540px) {
-	body {font-size: 13px; line-height: 110%;}
+	body {font-size: augmented-fourth(16px, -1); line-height: 110%;}
 	#wrapper { padding: 20px 40px; }
-	#header { margin-bottom: 40px; }
-	h1 { font-size: 17px; }
-	#footer { margin-top: 40px; padding-bottom: 20px; }
+		#header { text-align: center; }
+
+	h1 { font-size: augmented-fourth(16px, 2); }
+	#footer { margin: 40px 10px 0; padding-bottom: 20px; }
 }
 
 @media screen and (max-width: 440px) {
 
 	a#docs { display: none; }
 	#thumbnails a:first-child { margin-top: 0; }
-	#header { text-align: center; margin-bottom: 0; }
 	#wrapper { padding: 20px 20px 40px 20px; }
 	.post { margin-bottom: 40px; }
 	#footer { text-align: center; padding-bottom: 15px; }

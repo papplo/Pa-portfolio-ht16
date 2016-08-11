@@ -1,5 +1,6 @@
 title: Praxis Taller
-thumbnail: /static/images/image-thumbnail.jpg
+thumbnail:	
+
 tags: DESIGN AND REALISATION, E-COMMERCE, FRONTEND DEVELOPMENT
 date: 21-04-2016
 template: dark 
@@ -31,11 +32,11 @@ Sajten besöks i flera steg vid flera olika tillfällen, varför en viktigt stra
 Själva katalogen är begränsad och skiktad i fler olika prislägen och erbjuder ett högklassigt urval av komponenter och tillbehör för suktande besökare. 
 Sajten har en snabb översikt, väldigt lite presentationstexter och en överväldigande fokus på starkt bildmaterial.
 
-{% endfilter %}
-
-	<img class="featured 2x right" src="{% static '/images/Praxis-Devices.png' %}"/>
+{% endfilter  %}
+	<img class="full-width" src="{% static '/images/Praxis-Devices.png' %}"/>
 {% endblock collateral %}
 
 {% block full %}
-	<img class="featured 2x" src="{% static '/images/Praxis-Flyers.png' %}"/>
+	<img class="full-width" src="{% static '/images/Praxis-Bg-Collateral.jpg' %}"/>
+	<img class="full-width" src="{% static '/images/Praxis-Flyers.png' %}"/>
 {% endblock full %}

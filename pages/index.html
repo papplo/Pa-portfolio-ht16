@@ -21,23 +21,27 @@ med inrikting på varumärkesstrategi och digital design</p>
 			{% for post in posts %}
 				<li>
 					<a href='/{{ post.path }}'  class="{{ post.title|slugify }}">
-						<!-- <img class="" width="" height="" src="{{ post.thumbnail }}"/> -->
 						<span>{{ post.title }}</span>
+						
+						{% if post.thumbnail %}
+							<img class="" width="" height="" src="{{ post.thumbnail }}"/>
+						{% endif %}
+						
 					</a>
 				</li>
 			{% endfor %}
 			</ul>
 			<aside>
-				DESIGN 
-				REALISATION
-				E-COMMERCE
-				FRONTEND 
-				DEVELOPMENT
-				DESIGN 
-				REALISATION
-				E-COMMERCE
-				FRONTEND 
-				DEVELOPMENT
+
+				DESIGN<br>
+				UTVECKLING <br>
+				FRONTEND <br>
+				E-HANDEL<br>
+				BRANDING<br>
+				STRATEGI<br>
+				STARTUP<br>
+				UPPKOPPLAD<br>
+				FRAMÅT
 			</aside>
 		</section>
 
