@@ -6,32 +6,37 @@
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>/posts/case-praxis.html</loc>
+        <loc>/projekt/case-praxis.html</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>/posts/case-template.html</loc>
+        <loc>/projekt/case-template.html</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>/posts/project-five.html</loc>
+        <loc>/projekt/centro-leneria.html</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>/posts/project-four.html</loc>
+        <loc>/projekt/clickyeah.html</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>/posts/project-six.html</loc>
+        <loc>/projekt/design-mobile.html</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>/posts/project-three.html</loc>
+        <loc>/projekt/mokoma.html</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>/projekt/veloexpress.html</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
