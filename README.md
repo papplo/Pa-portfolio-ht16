@@ -4,4 +4,4 @@ Design Work published on ssg Cactus
 
 Serves purposefully to showcase some of my work, alongside my coding manners.
 
-http://work.clickyeah.cl
+http://anttila.co or http://clickyeah.getforge.io
