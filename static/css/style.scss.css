@@ -55,7 +55,12 @@ table {
   margin: 60px auto;
   position: relative;
   /*max-width: 902px;
-	width: 100%;*/ }
+		width: 100%;*/ }
+
+.post section::after {
+  clear: both;
+  content: "";
+  display: block; }
 
 html, body {
   min-height: 100%; }
@@ -94,8 +99,27 @@ body {
 .dark {
   background-color: #2F2F2F; }
 
+.light {
+  background-color: white; }
+
+.cream {
+  background-color: #F1F1F1; }
+
 #header {
   padding: 1em 0; }
+  #header h4 {
+    float: left; }
+  #header nav {
+    float: right; }
+    #header nav span {
+      padding-left: 1em;
+      font-size: 14px;
+      text-transform: uppercase; }
+    @media screen and (max-width: 540px) {
+      #header nav {
+        display: inline-block;
+        margin: 1em auto;
+        float: none; } }
 
 img {
   max-width: 100%; }
@@ -259,12 +283,16 @@ img {
         text-align: center; }
         #intro p:last-child {
           margin-right: 0; } }
+  @media screen and (max-width: 1100px) {
+    #intro {
+      margin-left: 10px;
+      margin-right: 10px; } }
 
 #footer {
   box-shadow: inset 0 1px 0 #eee;
   padding: 40px 0 0 0;
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-top: 50px;
+  margin-bottom: 50px;
   position: relative; }
   #footer p {
     float: left; }
@@ -299,20 +327,20 @@ h1 {
   padding-bottom: 20px; }
 
 h2 {
-  font-size: 45.23434px;
+  font-size: 31.99034px;
   line-height: 100%;
-  font-weight: bold;
-  color: #fff;
-  margin-bottom: 6px; }
+  font-weight: normal;
+  margin-bottom: 6px;
+  letter-spacing: -.05em; }
 
 h3 {
   font-size: 22px;
   font-weight: bold;
-  color: #eee;
+  color: #333;
   margin-bottom: 2px; }
 
 h4 {
-  font-size: 13px;
+  font-size: 14px;
   font-weight: bold;
   color: #666;
   margin-bottom: 2px; }
@@ -362,63 +390,88 @@ p.small {
         .post-header .post-body:last-child {
           margin-right: 0; } }
 
-.post-contents img {
+.post-contents {
   float: left;
   display: block;
   margin-right: 1.42203%;
   width: 83.09633%;
-  margin-left: 8.45184%; }
-  .post-contents img:last-child {
+  margin-left: 8.45184%;
+  position: relative; }
+  .post-contents:last-child {
     margin-right: 0; }
+  .post-contents img {
+    float: left;
+    display: block;
+    margin-right: 1.42203%;
+    width: 83.09633%;
+    margin-left: 8.45184%; }
+    .post-contents img:last-child {
+      margin-right: 0; }
+    .post-contents img.overlay {
+      position: absolute;
+      max-width: 261px;
+      width: 27%;
+      display: inline;
+      left: 50%;
+      margin-top: 8%; }
 
 .post-collateral {
-  max-width: 1085px;
-  margin-left: auto;
-  margin-right: auto; }
-  .post-collateral::after {
-    clear: both;
-    content: "";
-    display: block; }
-  .post-collateral img {
-    float: left;
-    display: block;
-    margin-right: 1.42203%;
-    width: 66.19266%; }
-    .post-collateral img:last-child {
-      margin-right: 0; }
-  .post-collateral h3, .post-collateral p {
-    margin-left: 8.45184%;
-    display: inline-block;
-    float: left;
-    display: block;
-    margin-right: 1.42203%;
-    width: 32.38531%; }
-    .post-collateral h3:last-child, .post-collateral p:last-child {
-      margin-right: 0; }
+  float: left;
+  display: block;
+  margin-right: 1.42203%;
+  width: 83.09633%;
+  margin-left: 8.45184%;
+  position: relative; }
+  .post-collateral:last-child {
+    margin-right: 0; }
+  .post-collateral .right-float {
+    position: absolute;
+    right: 0;
+    width: 50%;
+    max-width: 904px;
+    margin-right: -10px;
+    margin-top: 0px; }
 
 .post-full {
   max-width: 1085px;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  position: relative; }
   .post-full::after {
     clear: both;
     content: "";
     display: block; }
-  .post-full img {
-    flex: auto;
-    align-content: center;
-    margin: 0 auto; }
-  @media screen and (min-width: 769px) {
-    .post-full .praxistaller {
-      background-image: url(../images/Praxis-Bg-Collateral.jpg); } }
+  .post-full::after {
+    clear: both;
+    content: "";
+    display: block; }
+  .post-full.overlay {
+    position: absolute;
+    max-width: 261px;
+    width: 27%;
+    display: inline;
+    left: 50%;
+    margin-top: 8%; }
+  .post-full .bg-image {
+    display: none;
+    z-index: -2;
+    position: absolute;
+    left: 0;
+    width: 100%; }
+    @media screen and (min-width: 769px) {
+      .post-full .bg-image {
+        display: block; } }
 
 .post-meta {
-  font-size: 11.31542;
+  font-size: 18.624;
   font-weight: normal;
   line-height: 1.8;
   margin-bottom: 40px;
-  padding-top: 90.44135px;
+  padding-top: 1em;
   color: #25AF32; }
+  @media screen and (min-width: 769px) {
+    .post-meta {
+      padding-top: 90.44135px; } }
   .post-meta div {
     display: inline-block; }
     .post-meta div span {

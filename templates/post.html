@@ -3,7 +3,7 @@
 {% block title %}{{ title }} | Portfolio Pablo Anttila{% endblock title %}
 {% block content %}
 
-	<section class="post clearfix">
+	<section class="clearfix"> 
 		
 		<header id="header" class="wrapper">
 			<a href="/"><h4> &larr; Portfolio Pablo Anttila</h4></a>
@@ -37,19 +37,20 @@
 				{% endblock contents %}
 			</section>
 			
-			<section class="post-collateral">
+			<section class="post-full wrapper">
+				{% block full %}
+					This is where the final content is.
+				{% endblock full %}
+			</section>	
+			
+			<section class="post-collateral wrapper">
 				{% block collateral %}
 					This is where the rest of the content is.
 				{% endblock collateral %}
 			</section>
-						
-			<section class="post-full {{ title|cut:" "|lower }} ">
-				{% block full %}
-					This is where the final content is.
-				{% endblock full %}
-			</section>
-				
 			
+
+				
 		</article>
 
 		<footer id="footer" class="post-footer wrapper">

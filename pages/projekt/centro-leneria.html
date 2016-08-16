@@ -1,33 +1,32 @@
 title: Centro Leneria
 thumbnail: /static/images/Leneria-Intro.jpg
-tags: Frontend, Wordpress, CSS
+tags: Frontend, Wordpress, SASS
 date: 1-4-2016
 
-template: dark 
+template: cream
 
 {% extends "post.html" %}
 {% block body %}
 {% filter markdown %}
 
-
+Leñeria är ett sprudlande kreativt co-work sprunget ur ett direkt behov för entreprenörer och konstnärer att ha en bas och arbetsplats under sina uppstartsår. 
+Med denna kampanj skapade jag en ny site med ett tydligt mål och budskap; att finna nya hyresgäster och informera om lediga utrymmen och arbetsplatser.
+KILL THE BOSS!
 {% endfilter %}
 {% endblock body %}
 
 {% block contents %}
-	<img class="featured 2x " src="{% static '/images/Leneria-Intro.jpg' %}"/>
+<img class="" src="{% static '/images/Leneria-Intro-Full.png' %}"/>
+<img class="overlay" src="{% static '/images/Leneria-Mobile-1.png' %}"/>
 {% endblock contents %}
 
-{% block collateral %}
-{% filter markdown %}
-###Responsivt
-Sajten besöks i flera steg vid flera olika tillfällen, varför en viktigt strategi är att den fungerar och spelar bra på både mobil och desktop. 
-
-###Simpelt och snabbt
-Själva katalogen är begränsad och skiktad i fler olika prislägen och erbjuder ett högklassigt urval av komponenter och tillbehör för suktande besökare. 
-Sajten har en snabb översikt, väldigt lite presentationstexter och en överväldigande fokus på starkt bildmaterial.
-
-{% endfilter %}
-{% endblock collateral %}
-
 {% block full %}
+<img class="" src="{% static '/images/Leneria-full-bg.jpg' %}"/>
+<img class="overlay" src="{% static '/images/Leneria-Responsive.png' %}"/>
 {% endblock full %}
+
+{% block collateral %}
+<img class="" src="{% static '/images/Leneria-Ui.jpg' %}"/>
+<img class="" src="{% static '/images/Leneria-Mobile-2.png' %}"/>
+<img class="" src="{% static '/images/Leneria-Mobile-3.png' %}"/>
+{% endblock collateral %}

@@ -4,15 +4,17 @@
 	<section class="wrapper">
 		
 		<header id="header" class="wrapper">
-			<h4> Portfolio </h4>
-			{% block nav %}
-				{{ block.super }}
-			{% endblock nav %}
+			<h4>Portfolio</h4>
+			
+			<nav>
+				<span><a href="/about.html">About</a></span>
+				<span>Nytt</span>
+			</nav>
 		</header>
 		
 		<section id="intro" class="wrapper">
 			<h1>Pablo Anttila</h1>
-			<p>Kodare, producent och visuell kommunikatör 
+			<p>Kodare, webbproducent och visuell kommunikatör 
 med inrikting på varumärkesstrategi och digital design</p>
 		</section>
 
@@ -47,8 +49,8 @@ med inrikting på varumärkesstrategi och digital design</p>
 
 		{% block footer %}
 		<footer id="footer" class="wrapper">
-				<p class="small">Designed in Sketch, produced and prototyped in Cactus, Brackets and Chrome.</p>
-			</footer>
+			<p class="small">Designed in Sketch, produced and prototyped in Cactus, Brackets and Chrome.</p>
+		</footer>
 		{% endblock footer %}
 	</section>
 

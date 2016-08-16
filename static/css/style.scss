@@ -1,5 +1,6 @@
 @import "../lib/bourbon/_bourbon"; 
 @import "../lib/neat/_neat"; 
+$mobile: new-breakpoint(max-width 540px 4);
 
 /* Reset */
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,
@@ -19,19 +20,26 @@ table{border-collapse:collapse;border-spacing:0}
 	clear: both;
 }
 
-.post p,.post ul {
+.post { 
+
+	p, ul {
 	margin: 0 auto;
-}
+	}
 
-.post p {
-	margin-bottom: 20px;
-}
+	 p {
+		margin-bottom: 20px;
+	}
 
-.post img {
-	margin: 60px auto;
-	position: relative;
-	/*max-width: 902px;
-	width: 100%;*/
+	img {
+		margin: 60px auto;
+		position: relative;
+		/*max-width: 902px;
+		width: 100%;*/
+	}
+	
+	section {
+		@include clearfix();
+	}
 }
 
 html,body {
@@ -67,12 +75,29 @@ body {
   margin-right: -50vw;
 }
 
-.dark {
-	background-color: #2F2F2F;
-}
+.dark {	background-color: #2F2F2F;}
+.light{background-color: white;}
+.cream{background-color: #F1F1F1;}
 
 #header {
 	padding: 1em 0;
+
+	h4{float: left;}
+
+	nav {float: right;
+		
+		span {
+			padding-left: 1em;
+			font-size: augmented-fourth(16px, 0)-2;
+			text-transform: uppercase;
+		}
+		
+		@include media($mobile){
+			display: inline-block;
+			margin: 1em auto;
+			float: none;
+		}
+	}
 }
 
 img {
@@ -81,7 +106,6 @@ img {
 
 #thumbnails {
 	@include outer-container;
-	$mobile: new-breakpoint(max-width 540px 4);
 
 	aside {
 		@include span-columns(2);
@@ -191,7 +215,10 @@ $main-colour: #fff;
 		margin: 20px 10px 40px;
 		h1{ @include span-columns(12); text-align: center; }
 		p{ @include span-columns(12); text-align: center;}
-
+	}
+	@include media(max-width 1100px){
+		margin-left: 10px ;
+		margin-right: 10px;
 	}
 
 	
@@ -200,8 +227,8 @@ $main-colour: #fff;
 #footer { 
 	box-shadow: inset 0 1px 0 #eee;
 	padding: 40px 0 0 0;
-	margin-top: 100px;
-	margin-bottom: 100px;
+	margin-top: 50px;
+	margin-bottom: 50px;
 	position: relative;
 
 	p {
@@ -236,22 +263,22 @@ h1 {
 }
 
 h2 {
-	font-size: augmented-fourth(16px, 3);
+	font-size: augmented-fourth(16px, 2); 
 	line-height: 100%;
-	font-weight: bold;
-	color: #fff;
+	font-weight: normal; 
 	margin-bottom: 6px;
+	letter-spacing: -.05em;
 }
 
 h3 {
 	font-size: 22px;
 	font-weight: bold;
-	color: #eee;
+	color: #333;
 	margin-bottom: 2px;
 }
 
 h4 {
-	font-size: 13px;
+	font-size: augmented-fourth(16px, 0)-2;
 	font-weight: bold;
 	color: #666;
 	margin-bottom: 2px;
@@ -271,7 +298,7 @@ p.small {
 
 .post-header {
 	margin-bottom: 60px;
-	
+
 	.post-head {
 		@include span-columns(10);
 		@include shift(1);
@@ -292,48 +319,88 @@ p.small {
 }
 
 	.post-contents{
+		@include span-columns(10);
+		@include shift(1);
+				position: relative;
+
 		img {
 			@include span-columns(10);
 			@include shift(1);
+		
+			&.overlay {
+				position: absolute; 
+				max-width: 261px;
+				width: 27%;  
+				display: inline;
+				left: 50%;
+				margin-top: 8%;
+			}
+
+			
 		}
+		
 	}
 	.post-collateral{
-		@include outer-container();
-		
+		@include span-columns(10);
+		@include shift(1);
+				position: relative;
+
 		img {
-			@include span-columns(8);
+			
 		}
 		
-		h3, p {
-			@include shift(1);
-			display: inline-block;
-			@include span-columns(4);
+		& .right-float{
+			position: absolute;
+			right: 0;
+			width: 50%; 
+			max-width: 904px;
+			margin-right: -10px;
+			margin-top: 0px;
 		}
+		
 	}
 
 	.post-full{
+		@include clearfix;
 		@include outer-container();
-		
+		position: relative;
 		img {
-			flex: auto;
-			align-content: center;
-			margin: 0 auto;
+
 		}
 		
-		& .praxistaller {
+		&.overlay {
+			position: absolute; 
+			max-width: 261px;
+			width: 27%;  
+			display: inline;
+			left: 50%;
+			margin-top: 8%;
+		}
+		& .bg-image {
+			display: none;
+			z-index: -2;
+			position: absolute;
+			left:0;
+			width: 100%;
 			@include media(769px) {
-				background-image: url(../images/Praxis-Bg-Collateral.jpg);
+				display: block;
 			}
 		}
+
+
 	}
 
 .post-meta {
-	font-size: augmented-fourth(16, -1);
+	font-size: augmented-fourth(16, 1)-4;
 	font-weight: normal;
 	line-height: 1.8;
 	margin-bottom: 40px;
-	padding-top: augmented-fourth(16px, 5);
+	padding-top: 1em;
 	color: #25AF32;
+	
+		@include media(769px) {
+			padding-top: augmented-fourth(16px, 5); 
+		}
 
 	div {
 	display: inline-block;
