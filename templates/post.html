@@ -31,29 +31,27 @@
 				
 			</header>
 			
-			<section class="post-contents wrapper"> 
+			<section class="post-contents"> 
 				{% block contents %}
 					This is where the graphic content is.
 				{% endblock contents %}
 			</section>
 			
-			<section class="post-full wrapper">
+			<section class="post-collateral">
+				{% block collateral %}
+					This is where the rest of the content is.
+				{% endblock collateral %}
+			</section>	
+			
+			<section class="post-full">
 				{% block full %}
 					This is where the final content is.
 				{% endblock full %}
 			</section>	
 			
-			<section class="post-collateral wrapper">
-				{% block collateral %}
-					This is where the rest of the content is.
-				{% endblock collateral %}
-			</section>
-			
-
-				
 		</article>
 
-		<footer id="footer" class="post-footer wrapper">
+		<footer id="footer" class="post-footer wrapper clearfix">
 			<nav id="post-nav">
 				<span class="prev">
 				{% if prevPost %}

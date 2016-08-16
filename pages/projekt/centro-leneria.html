@@ -20,13 +20,16 @@ KILL THE BOSS!
 <img class="overlay" src="{% static '/images/Leneria-Mobile-1.png' %}"/>
 {% endblock contents %}
 
-{% block full %}
-<img class="" src="{% static '/images/Leneria-full-bg.jpg' %}"/>
-<img class="overlay" src="{% static '/images/Leneria-Responsive.png' %}"/>
-{% endblock full %}
-
 {% block collateral %}
-<img class="" src="{% static '/images/Leneria-Ui.jpg' %}"/>
-<img class="" src="{% static '/images/Leneria-Mobile-2.png' %}"/>
-<img class="" src="{% static '/images/Leneria-Mobile-3.png' %}"/>
+<img class="big" src="{% static '/images/Leneria-Ui.jpg' %}"/>
+<img class="small" src="{% static '/images/Leneria-Mobile-2.png' %}"/>
+<img class="small" src="{% static '/images/Leneria-Mobile-3.png' %}"/>
+<img class="small" src="{% static '/images/Leneria-Type.jpg' %}"/>
+
 {% endblock collateral %}
+
+{% block full %}
+<img class="bg-image" src="{% static '/images/Leneria-full-bg.jpg' %}"/>
+<img class="overlay" src="{% static '/images/Leneria-Responsive.png' %}"/>
+
+{% endblock full %}

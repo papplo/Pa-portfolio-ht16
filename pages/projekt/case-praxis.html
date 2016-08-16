@@ -24,9 +24,9 @@ I samband med kampanjen och den kommunikativa strategin utvecklade jag en sajt s
 {% endblock contents %}
 
 {% block collateral %}
-<img class="right-float" src="{% static '/images/Praxis-Devices.png' %}"/>
-
 {% filter markdown %}
+<img class="" src="{% static '/images/Praxis-Devices.png' %}"/>
+
 ###Responsivt
 Sajten besöks i flera steg vid flera olika tillfällen, varför en viktigt strategi är att den fungerar och spelar bra på både mobil och desktop.
 ###Simpelt och snabbt
@@ -35,6 +35,6 @@ Själva katalogen är begränsad och skiktad i fler olika prislägen och erbjude
 {% endblock collateral %}
 
 {% block full %}
-	<img class="" src="{% static '/images/Praxis-Bg-Collateral.jpg' %}"/>
-	<img class="" src="{% static '/images/Praxis-Flyers.png' %}"/>
+	<img class="bg-image" src="{% static '/images/Praxis-Bg-Collateral.jpg' %}"/>
+	<img class="overlay" src="{% static '/images/Praxis-Flyers.png' %}"/>
 {% endblock full %}

@@ -321,7 +321,7 @@ p.small {
 	.post-contents{
 		@include span-columns(10);
 		@include shift(1);
-				position: relative;
+		position: relative;
 
 		img {
 			@include span-columns(10);
@@ -342,12 +342,22 @@ p.small {
 	}
 	.post-collateral{
 		@include span-columns(10);
-		@include shift(1);
-				position: relative;
-
+		@include shift(1); 
+		@include clearfix();
+		
 		img {
-			
+
+			&.big {
+				@include span-columns(6);   
+				@include shift(1);    
+
+			}
+			&.small {
+				@include span-columns(3);
+				@include shift(1);  
+			}
 		}
+	
 		
 		& .right-float{
 			position: absolute;
@@ -361,25 +371,27 @@ p.small {
 	}
 
 	.post-full{
-		@include clearfix;
-		@include outer-container();
-		position: relative;
-		img {
+		@include clearfix();
+		@include span-columns(12); 
+		position: relative; 
+		display: flex;
+		align-items: center;
+		justify-content: bottom; 
 
+		img {
 		}
 		
-		&.overlay {
-			position: absolute; 
-			max-width: 261px;
-			width: 27%;  
-			display: inline;
-			left: 50%;
-			margin-top: 8%;
-		}
+		& .overlay { 
+			align-self: flex-end; 
+			transform: translateY(60px);     
+    		display: inline-block;
+
+			}
+		 
 		& .bg-image {
 			display: none;
 			z-index: -2;
-			position: absolute;
+			position: absolute; 
 			left:0;
 			width: 100%;
 			@include media(769px) {
@@ -424,6 +436,7 @@ p.small {
 }
 	
 .post-footer {
+	@include row();
 	margin: 2em auto;
 }
 

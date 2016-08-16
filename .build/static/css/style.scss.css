@@ -420,10 +420,29 @@ p.small {
   display: block;
   margin-right: 1.42203%;
   width: 83.09633%;
-  margin-left: 8.45184%;
-  position: relative; }
+  margin-left: 8.45184%; }
   .post-collateral:last-child {
     margin-right: 0; }
+  .post-collateral::after {
+    clear: both;
+    content: "";
+    display: block; }
+  .post-collateral img.big {
+    float: left;
+    display: block;
+    margin-right: 1.42203%;
+    width: 49.28899%;
+    margin-left: 8.45184%; }
+    .post-collateral img.big:last-child {
+      margin-right: 0; }
+  .post-collateral img.small {
+    float: left;
+    display: block;
+    margin-right: 1.42203%;
+    width: 23.93348%;
+    margin-left: 8.45184%; }
+    .post-collateral img.small:last-child {
+      margin-right: 0; }
   .post-collateral .right-float {
     position: absolute;
     right: 0;
@@ -433,25 +452,24 @@ p.small {
     margin-top: 0px; }
 
 .post-full {
-  max-width: 1085px;
-  margin-left: auto;
-  margin-right: auto;
-  position: relative; }
+  float: left;
+  display: block;
+  margin-right: 1.42203%;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: bottom; }
   .post-full::after {
     clear: both;
     content: "";
     display: block; }
-  .post-full::after {
-    clear: both;
-    content: "";
-    display: block; }
-  .post-full.overlay {
-    position: absolute;
-    max-width: 261px;
-    width: 27%;
-    display: inline;
-    left: 50%;
-    margin-top: 8%; }
+  .post-full:last-child {
+    margin-right: 0; }
+  .post-full .overlay {
+    align-self: flex-end;
+    transform: translateY(60px);
+    display: inline-block; }
   .post-full .bg-image {
     display: none;
     z-index: -2;
@@ -488,7 +506,12 @@ p.small {
       color: #aaa; }
 
 .post-footer {
+  display: block;
   margin: 2em auto; }
+  .post-footer::after {
+    clear: both;
+    content: "";
+    display: block; }
 
 #sharing {
   float: right;
