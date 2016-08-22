@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="37px" height="37px" viewBox="0 0 37 37" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>i-cargo</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="37" height="37" rx="3"></rect>
+    </defs>
+    <g id="Site-Index" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1400-Wide-Kulors-Copy" transform="translate(-626.000000, -2963.000000)">
+            <g id="Group-4" transform="translate(0.000000, 2685.000000)">
+                <g id="Group-7" transform="translate(570.000000, 278.000000)">
+                    <g id="i-cargo" transform="translate(56.000000, 0.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="Mask" fill="#D8D8D8" xlink:href="#path-1"></use>
+                        <image id="cargo" mask="url(#mask-2)" x="0" y="0" width="37" height="37" xlink:href="data:image/png;base64,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"></image>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
