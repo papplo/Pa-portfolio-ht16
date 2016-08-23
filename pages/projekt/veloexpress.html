@@ -1,15 +1,44 @@
-title: Veloexpress
-thumbnail: 
-tags: Image
+title: Velo express
+thumbnail: /static/images/Velo-Cards.jpg
+tags: Ui-design, Brand Creation, Koncept
 date: 12-10-2015
+template: cream
 
 {% extends "post.html" %}
 {% block body %}
 {% filter markdown %}
 
-<img class="featured 2x" src="{% static '/images/image-full.jpg' %}"/>
-
-Displays images in a grid, with individual pages optionally describing the image in detail, or displaying more images. Images have a max-width of 400 pixels by default.
+Veloexpress är en startup som knyter samman beställare, ehandlare och bud genom en smart app för mobilen. Denna startup tävlar som nykomling på logistikfronten på en enorm marknad med bas i Santiago, Chile. 
+Mitt ansvar innehåller både branding, look & feel, ui-design och konceptutveckling.
 
 {% endfilter %}
 {% endblock body %}
+
+{% block contents %}
+	<img class="" src="{% static '/images/Velo-Intro.jpg' %}"/>
+	<br><br><img class="overlay" src="{% static '/images/Velo-App.png' %}"/>
+	<img class="" src="{% static '/images/Velo-Brand.jpg' %}"/>
+	<img class="" src="{% static '/images/Velo-Cards.jpg' %}"/>
+{% endblock contents %} 
+
+{% block collateral %}
+
+<p class="small">Appen har lanserats enligt filosofin Lean med inkrementella förbättringar och ändringar av produkten efter användarnas och brukarnas feedback.</p> 
+<br> <br>
+
+	<img class="big right" src="{% static '/images/Velo-bb-1.jpg' %}"/>
+	<img class="med left" src="{% static '/images/Velo-bb-2.jpg' %}"/>
+	<img class="big right " src="{% static '/images/Velo-bb-3.jpg' %}"/>
+	<img class="med left " src="{% static '/images/Velo-bb-4.jpg' %}"/> 
+	
+
+
+{% endblock collateral %}
+
+
+
+{% block full %}
+	<div class="full-width veloexpress"> 
+		<img class="right" src="{% static '/images/Velo-Guide.png' %}"/> 
+	</div>
+{% endblock full %} 

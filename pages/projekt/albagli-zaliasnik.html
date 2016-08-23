@@ -1,0 +1,35 @@
+title: Albagli Zaliasnik
+thumbnail: /static/images/Az-Intro.jpg
+tags: UI-DESIGN, NEWSLETTER, BRANDING
+date: 01-06-2016
+template: light
+
+
+{% extends "post.html" %}
+{% block body %}
+{% filter markdown %}
+	Albagli Zaliasnik, en advokatstudio med 25 års erfarenhet anförtrodde sitt varumärke till MagiaLiquid för att förnya och putsa uttrycket, retoriken och lyfta fram de viktiga punkterna i erbjudandet. 
+	<p>Ett traditionstyngt yrke och förnyelse är inte alltid synonymt, och utmaningen i detta uppdrag var lika delar intern som extern kommunikation.</p>
+	<p>Mitt ansvar i denna rebranding var formgivningen av webben och nyhetsbrevet — det digitala uttrycket.</p>
+{% endfilter %}
+{% endblock body %}
+
+
+{% block contents %}
+	<img class="" src="{% static '/images/Az-Chrome.png' %}"/>
+	<img class="centered" src="{% static '/images/AZ-Portraits.jpg' %}"/>
+{% endblock contents %}
+
+{% block collateral %}
+	<p class="small">En stor del av prestigen kunde härledas till personalstyrkan och de ledande rollerna, varför bildspråket och porträtten har en framhävd roll i uttrycket.</p> 
+	<br> <br>
+	<img class="small" src="{% static '/images/AZ-Ui-2.jpg' %}"/>
+	<img class="big" src="{% static '/images/AZ-Ui-1.jpg' %}"/>
+{% endblock collateral %}
+
+{% block full %}
+	<img class="bg-image" src="{% static '/images/Leneria-full-bg.jpg' %}"/>
+	<img class="overlay" src="{% static '/images/Leneria-Responsive.png' %}"/>
+{% endblock full %}
+
+

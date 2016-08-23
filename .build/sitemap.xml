@@ -11,32 +11,17 @@
         <priority>1.0</priority>
     </url>
     <url>
+        <loc>/projekt/albagli-zaliasnik.html</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
         <loc>/projekt/case-praxis.html</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>/projekt/case-template.html</loc>
-        <changefreq>daily</changefreq>
-        <priority>1.0</priority>
-    </url>
-    <url>
         <loc>/projekt/centro-leneria.html</loc>
-        <changefreq>daily</changefreq>
-        <priority>1.0</priority>
-    </url>
-    <url>
-        <loc>/projekt/clickyeah.html</loc>
-        <changefreq>daily</changefreq>
-        <priority>1.0</priority>
-    </url>
-    <url>
-        <loc>/projekt/design-mobile.html</loc>
-        <changefreq>daily</changefreq>
-        <priority>1.0</priority>
-    </url>
-    <url>
-        <loc>/projekt/mokoma.html</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
