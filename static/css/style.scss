@@ -588,6 +588,10 @@ p.small {
 		justify-content: bottom; 
 	}
 
+	.img-grid{
+		@include span-columns(10); 
+		@include shift(1);
+	}
 
 	img {
 	}
@@ -609,6 +613,10 @@ p.small {
 			display: block;
 		}
 	}
+	
+	& .small {
+		@include span-columns(4);  
+ 	}
 
 
 }

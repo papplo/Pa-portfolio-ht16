@@ -655,6 +655,14 @@ p.small {
         display: block; }
       .post-full:last-child {
         margin-right: 0; } }
+  .post-full .img-grid {
+    float: left;
+    display: block;
+    margin-right: 1.42203%;
+    width: 83.09633%;
+    margin-left: 8.45184%; }
+    .post-full .img-grid:last-child {
+      margin-right: 0; }
   .post-full .overlay {
     align-self: flex-end;
     transform: translateY(60px);
@@ -668,6 +676,13 @@ p.small {
     @media screen and (min-width: 769px) {
       .post-full .bg-image {
         display: block; } }
+  .post-full .small {
+    float: left;
+    display: block;
+    margin-right: 1.42203%;
+    width: 32.38531%; }
+    .post-full .small:last-child {
+      margin-right: 0; }
 
 .post-meta {
   font-size: 18.624;
