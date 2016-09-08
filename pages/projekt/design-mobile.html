@@ -1,0 +1,36 @@
+title: DesignMobile
+thumbnail: /static/images/dmobile-intro.jpg
+tags: Art Direction, Frontend, Ui-design
+date: 1-4-2012
+template: light
+
+{% extends "post.html" %}
+{% block body %}
+{% filter markdown %}
+DesignMobile drev på för att göra mobilsurfandet mer användarvänligt genom sinnrika touchoptimerade mobillösningar. Den rådande surfupplevelsen år 2010 stämde inte överens med de tekniska framstegen och surfvanorna skiftade till de mobila enheternas fördel.
+
+Sedan 2010 har DesignMobile medverkat i hundratals projekt både som strateger, kravställare, designers, idémakare och producenter. 
+
+Min roll var att leda det visuella arbetet med kundprojekten och även utveckla den tekniska plattformen.
+{% endfilter %}
+{% endblock body %}
+
+{% block contents %}
+	<img class="" src="{% static '/images/dmobile-intro.jpg' %}"/>
+	<img class="" src="{% static '/images/dmobile-01.jpg' %}"/>
+	<img class="" src="{% static '/images/dmobile-02.jpg' %}"/>
+	<img class="" src="{% static '/images/dmobile-03.jpg' %}"/>
+	<img class="" src="{% static '/images/dmobile-05.jpg' %}"/>
+	<img class="" src="{% static '/images/dmobile-06.jpg' %}"/>
+	<img class="" src="{% static '/images/dmobile-07.jpg' %}"/>
+	<img class="" src="{% static '/images/dmobile-08.jpg' %}"/>
+{% endblock contents %}
+
+{% block collateral %}
+
+{% endblock collateral %}
+
+{% block full %}
+	<img class="bg-image" src="{% static '/images/dmobile-bg.jpg' %}"/>
+	<img class="overlay big" src="{% static '/images/dmobile-00.png' %}"/>
+{% endblock full %}
