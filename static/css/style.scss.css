@@ -55,14 +55,35 @@ html {
 .centro-leneria {
   background-color: #F5A623; }
 
-.chol1 {
-  background-color: #CD0218; }
-
 .clickyeah {
   background-color: #FF4959; }
 
+.justclimb {
+  background-color: #F35A00; }
+
+.justride {
+  background-color: #63A9FB; }
+
+.chol1 {
+  background-color: #C73030; }
+
+.factoria {
+  background-color: #604421; }
+
+.justclimb {
+  background-color: #F35A00; }
+
 .designmobile {
   background-color: #FF4959; }
+
+.lockup {
+  -webkit-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.5); }
+  .lockup::after {
+    clear: both;
+    content: "";
+    display: block; }
 
 /* Full width bg */
 .full-width-bg {
@@ -221,6 +242,10 @@ img {
         text-align: center;
         position: relative;
         width: 100%; } }
+  @media screen and (max-width: 1300px) {
+    #thumbnails {
+      margin-left: 10px;
+      margin-right: 10px; } }
   #thumbnails .thumbnails-list {
     margin-left: 16.90367%; }
     @media screen and (max-width: 540px) {
@@ -344,7 +369,7 @@ img {
         text-align: center; }
         #intro p:last-child {
           margin-right: 0; } }
-  @media screen and (max-width: 1100px) {
+  @media screen and (max-width: 1300px) {
     #intro {
       margin-left: 10px;
       margin-right: 10px; } }

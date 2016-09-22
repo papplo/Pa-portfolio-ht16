@@ -43,9 +43,27 @@ $action-color:	#FF4959;
 .praxis-taller 	{ background-color: #FF4959;}
 .veloexpress, .velo-express   	{ background-color: #74A82E; background-image: linear-gradient(-180deg, #FFFFFF 1%, #74A82E 100%);}
 .centro-leneria	{ background-color: #F5A623;}
-.chol1 			{ background-color: #CD0218;}
 .clickyeah		{ background-color: #FF4959;}
+	.justclimb		{ background-color: #F35A00; }
+	.justride		{ background-color: #63A9FB;}
+	.chol1			{ background-color: #C73030;}
+	.factoria		{ background-color: #604421;}
+	.justclimb		{ background-color: #F35A00;}
 .designmobile  	{ background-color: #FF4959;}
+
+
+
+// shadow Mixin
+@mixin box-shadow($horizontal: 0px, $vertical: 0px, $blur: 25px, $color: rgba(0,0,0,0.5)) {
+  -webkit-box-shadow: $horizontal $vertical $blur $color;
+  -moz-box-shadow: $horizontal $vertical $blur $color;
+  box-shadow: $horizontal $vertical $blur $color;
+}
+
+.lockup{
+	 @include box-shadow;
+	 @include clearfix();
+}
 
 // rounded Mixin
 @mixin rounded($radius: 2em) {
@@ -190,6 +208,11 @@ img {
 		}
 	}	
 	
+	@include media(max-width 1300px){
+		margin-left: 10px ;
+		margin-right: 10px;
+	}
+	
 	.thumbnails-list {
 		@include shift(2);	
 		@include media($mobile) {
@@ -282,7 +305,7 @@ img {
 		h1{ @include span-columns(12); text-align: center; }
 		p{ @include span-columns(12); text-align: center;}
 	}
-	@include media(max-width 1100px){
+	@include media(max-width 1300px){
 		margin-left: 10px ;
 		margin-right: 10px;
 	}
